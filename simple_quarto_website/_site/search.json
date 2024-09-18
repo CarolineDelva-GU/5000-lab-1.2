@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "about.html#lorem-ipsum-odor-amet-consectetuer-adipiscing-elit.-felis-natoque-litora-platea-1",
+    "href": "about.html#lorem-ipsum-odor-amet-consectetuer-adipiscing-elit.-felis-natoque-litora-platea-1",
+    "title": "About",
+    "section": "Lorem ipsum odor amet, consectetuer adipiscing elit. Felis natoque litora platea",
+    "text": "Lorem ipsum odor amet, consectetuer adipiscing elit. Felis natoque litora platea\n\nLorem ipsum odor amet, consectetuer adipiscing elit. Felis natoque litora platea\n\n# INSERT YOUR SOLUTION HERE\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\n# Loading the dataset from Seaborn\ndf = sns.load_dataset(\"penguins\")\nprint(df.head())\n\n# Creating initial plot\nFirstPlot = sns.relplot(\ndata=df,\nx='bill_length_mm',\ny='flipper_length_mm',\nhue='species',\ncol='island',\ns=200\n)\n\n# Setting the theme of the graphs\nsns.set_theme(style='white',palette=\"Pastel1\")\n\n# Printing the types\nprint('-----TYPES-----')\nprint(type(FirstPlot.fig))\nprint(type(FirstPlot.axes[0,0]))\nprint(type(FirstPlot.axes[0,1]))\nprint('                  ')\n\n#setting the font size at 18\nFS=18\n\n# Axis Labels and Font Size\nfor i in range(0,3):\n    FirstPlot.axes[0,i].set_xlabel('Penguin bill length (mm)', fontsize=FS)\nFirstPlot.axes[0,0].set_ylabel('Penguin flipper length (mm)', fontsize=FS)\n\n\n# Setting the titles\nFirstPlot.axes[0,0].set_title(\"Torgersen Island\", fontsize=FS)\nFirstPlot.axes[0,1].set_title(\"Biscoe Island\", fontsize=FS)\nFirstPlot.axes[0,2].set_title(\"Dream Island\", fontsize=FS)\n\n#Getting the large ticks for the graphs\nfor i in range(0,3):\n    FirstPlot.axes[0,i].tick_params(axis='both', which='major', labelsize=FS)\n\n# Setting legend font size\nplt.setp(FirstPlot._legend.get_texts(), fontsize=FS)\nplt.setp(FirstPlot._legend.get_title(), fontsize=FS)\n\n#Saving the figure\nplt.savefig(\"plot-1.pdf\", bbox_inches=\"tight\")\nplt.show()\n\n\n  species     island  bill_length_mm  bill_depth_mm  flipper_length_mm  \\\n0  Adelie  Torgersen            39.1           18.7              181.0   \n1  Adelie  Torgersen            39.5           17.4              186.0   \n2  Adelie  Torgersen            40.3           18.0              195.0   \n3  Adelie  Torgersen             NaN            NaN                NaN   \n4  Adelie  Torgersen            36.7           19.3              193.0   \n\n   body_mass_g     sex  \n0       3750.0    Male  \n1       3800.0  Female  \n2       3250.0  Female  \n3          NaN     NaN  \n4       3450.0  Female  \n-----TYPES-----\n&lt;class 'matplotlib.figure.Figure'&gt;\n&lt;class 'matplotlib.axes._axes.Axes'&gt;\n&lt;class 'matplotlib.axes._axes.Axes'&gt;"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About",
+    "section": "",
+    "text": "Lorem ipsum dolor sit amet,\n\\(\\frac{1}{5}\\)\n\\[  E = mc^2\n\\]\nLorem ipsum dolor sit amet, consectetur adipiscing elit.1\nflowchart LR\n  A[How far is it?] --&gt; B(How many people are coming?)\n  B --&gt; C{Cuisine}\n  C --&gt; D[Mexican]\n  C --&gt; E[Japanese]\n  \n\n\n Find the right restaurant\nHow to eat healthy? (Lim 2018)."
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "About",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nProin sagittis quam at euismod viverra.↩︎"
+  },
+  {
+    "objectID": "slides/slides.html#cuisine",
+    "href": "slides/slides.html#cuisine",
+    "title": "Food",
+    "section": "Cuisine",
+    "text": "Cuisine\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nfruits"
+  },
+  {
+    "objectID": "slides/slides.html#favorite-restaurants",
+    "href": "slides/slides.html#favorite-restaurants",
+    "title": "Food",
+    "section": "Favorite Restaurants",
+    "text": "Favorite Restaurants\nLorem ipsum odor amet, consectetuer adipiscing elit. Tellus tempor parturient efficitur at hendrerit molestie quisque ipsum! Finibus habitant nascetur lacinia; cubilia purus commodo. Malesuada sed aliquet lacinia; nullam pharetra dignissim taciti. Iaculis ipsum orci habitant eros quisque proin. Elit nunc hac libero; ex nulla ex id suspendisse. Odio iaculis ligula ante luctus aliquam eros taciti placerat. Fermentum massa justo quis ut fames libero convallis tincidunt nulla.\n\nburger"
+  },
+  {
+    "objectID": "slides/slides.html#python-code",
+    "href": "slides/slides.html#python-code",
+    "title": "Food",
+    "section": "Python Code",
+    "text": "Python Code\n# Simple print statement\nprint(\"I love eating food.\")"
+  },
+  {
+    "objectID": "slides/slides.html#refences",
+    "href": "slides/slides.html#refences",
+    "title": "Food",
+    "section": "Refences",
+    "text": "Refences\nHow to eat healthy? (Lim 2018)."
+  },
+  {
+    "objectID": "slides/slides.html#code-folding",
+    "href": "slides/slides.html#code-folding",
+    "title": "Food",
+    "section": "Code Folding",
+    "text": "Code Folding\nThis is code folding\n\n\nCode\n\n# Simple for loop\nx = [1,4,6,8]\nfor i in x:\n  print(i)\n\n\n\n\n\n\n\n\n\n\nLim, Soo. 2018. “Eating a Balanced Diet: A Healthy Life Through a Balanced Diet in the Age of Longevity.” Journal of Obesity & Metabolic Syndrome 27 (1): 39."
+  }
+]

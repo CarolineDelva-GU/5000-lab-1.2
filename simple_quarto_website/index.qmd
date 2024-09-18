@@ -1,0 +1,98 @@
+---
+title: "About"
+bibliography: reference.bib  
+toc: true        
+toc-title: "Table of Contents"  
+toc-depth: 2
+---
+
+
+
+<h1>Lorem ipsum dolor sit amet, </h1>
+<h2> Consectetur adipiscing elit </h2>
+<h3>Two columns with bulleted text </h3>
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut quam non purus dictum pretium. Nullam mauris eros, accumsan vitae neque eget, ultrices sollicitudin diam. Mauris pretium augue ex, eget vulputate ex sollicitudin at. Fusce in laoreet nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras fringilla diam ut neque dignissim, sed faucibus lectus convallis. Nulla posuere quam hendrerit, ullamcorper nibh eu, imperdiet augue. Vivamus laoreet purus quis nisl mollis, non commodo est pulvinar. Aenean sed nibh nec lacus laoreet convallis. Aliquam eu placerat felis.
+
+Nulla imperdiet vestibulum tortor. Aliquam faucibus nunc vitae iaculis interdum. Quisque vitae quam et quam porta consequat eu vehicula libero. Aliquam viverra et libero ut aliquam. Proin dapibus posuere velit eu mollis. Cras ut mattis quam. Donec egestas bibendum sem, a sagittis lectus scelerisque sit amet. Vestibulum nisl felis, finibus et viverra ut, volutpat quis ante. Etiam id maximus metus. Proin nec diam vehicula, interdum risus ac, tincidunt risus. Nulla feugiat id neque et fermentum. Praesent dictum leo eget malesuada laoreet. Curabitur erat diam, tincidunt sed arcu nec, sagittis feugiat urna. Proin sagittis quam at euismod viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+:::
+
+::: {.column width="20%"}
+
+:::
+
+::: {.column width="40%"}
+* Duis ac dignissim nisi. Vivamus a vulputate ex, eu ultrices magna. Nullam tincidunt elementum tincidunt. Donec volutpat imperdiet placerat. 
+* Morbi luctus ac nibh ut venenatis. Donec sit amet venenatis felis. Integer vehicula interdum felis, non convallis tellus blandit vitae. 
+* Morbi tempor justo eget dui bibendum semper. Maecenas euismod pretium nibh, et sagittis nunc finibus ut. Nullam ullamcorper luctus placerat. 
+* Etiam pellentesque ut mauris eget convallis. Vivamus blandit suscipit dolor, et finibus ligula hendrerit ac. Aenean tortor ex, eleifend vel pulvinar id, maximus eu diam. Vestibulum convallis cursus semper. Aliquam a gravida lectus.
+
+* Maecenas consequat maximus eros eget elementum. Suspendisse cursus libero odio, nec lacinia nisi venenatis facilisis. Vivamus vulputate, arcu vitae luctus congue, 
+* lacus justo rhoncus arcu, quis porta eros sapien congue nunc. Integer sit amet dapibus dolor. Duis quis erat tincidunt, mollis nulla non, tristique neque. 
+* Donec consectetur tellus vel lorem porttitor, eu volutpat turpis tincidunt. Proin ultrices sed mi id bibendum. Nullam euismod augue placerat, dictum ante in, 
+* euismod mi. Etiam commodo nisi vel congue fermentum. Curabitur sagittis justo in condimentum condimentum. Nam laoreet metus urna, in pellentesque urna posuere ut.
+:::
+
+::::
+
+<h3>Table </h3>
+
+| laoreet | poe  | ore   | jie    |
+|---------|:-----|------:|:------:|
+| 12      | 12   |    12 |   12   |
+| 123     | 125  |   127 |  120   |
+| 134     | 145  |    45 |   10   |
+
+
+
+<h3>inline-math LaTex equation</h3>
+
+$\frac{1}{5}$
+
+
+<h3>non inline-math LaTex equation</h3>
+
+$$  E = mc^2
+$$
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.^[Proin sagittis quam at euismod viverra.]
+
+<h3>One single quote</h3>
+
+> quote 
+
+<h3>sorted embeded images </h3>
+
+::: {layout="[[1,1], [1]]"}
+![burger](images/burger.png)
+
+![fruits](images/fruits.png)
+
+![spagetti](images/spagetti.png)
+:::
+
+
+<h3>embeded video </h3>
+
+{{< video https://www.youtube.com/watch?v=zIhaawHJr2c&t=21s>}}
+
+<h3>Mermaid Diagram </h3>
+
+```{mermaid }
+%%| fig-width: 6.5
+%%| fig-cap: Find the right restaurant
+flowchart LR
+  A[How far is it?] --> B(How many people are coming?)
+  B --> C{Cuisine}
+  C --> D[Mexican]
+  C --> E[Japanese]
+  
+```
+<h3>Referencing the bib file </h3>
+
+How to eat healthy? [@lim2018eating].
+
+# References
